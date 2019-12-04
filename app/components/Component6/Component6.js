@@ -1,14 +1,15 @@
 import React, {Component} from 'react';
-import {AppRegistry, Text, View} from 'react-native';
+import {AppRegistry, Text, View, Button} from 'react-native';
 
-export default class Component5 extends Component {
+export default class Component6 extends Component {
+  
   render() {
     return(
       <View>
-        <Text>Details</Text>
+        <Button onPress = {() => {this.props.navigation.navigate('Component5')}} title = "Go Back" />
       </View>
     );
   }
 }
 
-AppRegistry.registerComponent('Component5', () => Component5);
+AppRegistry.registerComponent('Component6', () => Component6);
